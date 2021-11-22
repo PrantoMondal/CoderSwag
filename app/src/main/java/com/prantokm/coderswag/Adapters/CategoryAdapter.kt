@@ -11,9 +11,7 @@ import com.prantokm.coderswag.Model.Category
 import com.prantokm.coderswag.R
 import com.prantokm.coderswag.Services.DataService.categories
 
-class CategoryAdapter(context: Context,categories:List<Category>) : BaseAdapter(){
-    val context = context
-    val categories = categories
+class CategoryAdapter(val context: Context, val categories: List<Category>) : BaseAdapter(){
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
        val categoryView:View
 
