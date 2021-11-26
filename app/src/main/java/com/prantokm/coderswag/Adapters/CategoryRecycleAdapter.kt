@@ -14,7 +14,7 @@ import java.util.*
 class CategoryRecycleAdapter (val context:Context,val categories:List<Category>,val itemCllick: (Category)-> Unit): RecyclerView.Adapter<CategoryRecycleAdapter.Holder>() {
 
     override fun onBindViewHolder(holder: Holder, position: Int) {
-        holder.bindCategory(categories[position],context)
+        holder?.bindCategory(categories[position],context)
 
     }
 
